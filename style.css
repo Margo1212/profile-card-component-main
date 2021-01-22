@@ -65,6 +65,7 @@ img {
 
 .container__box__bg {
     width: 18rem;
+    height: 6rem;
     border-radius: 5px 5px 0 0;
 }
 
