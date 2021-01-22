@@ -48,6 +48,13 @@ img {
     flex-direction: column;
 }
 
+@media (max-width: 375px) {
+    .container__box {
+      min-width: 90%;
+      min-height: auto;
+    }
+}
+
 .container__box__profile {
     width: 90px;
     border: 5px solid white;
@@ -55,9 +62,16 @@ img {
     position: relative;
     top: 3.3rem;
 }
+
 .container__box__bg {
     width: 18rem;
     border-radius: 5px 5px 0 0;
+}
+
+@media (max-width: 375px) {
+    .container__box__bg {
+      min-width: 90%;
+    }
 }
 
 .box__user {
@@ -73,13 +87,22 @@ img {
 
 }
 
-.box__user__city, .age {
+.box__user__city, .box__user__age, .text {
     color: hsl(0, 0%, 59%);
 }
 
+.box__user__age {
+    font-weight: normal;
+}
 
 .box__user__city {
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+@media (max-width: 375px) {
+    .box__user__city {
+      padding-bottom: 1.5rem;
+    }
 }
 
 .box__desc {
@@ -87,5 +110,21 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    text-align: center;
+    border-top: 1px solid hsl(0, 4%, 87%);
+    padding-top: 2rem;
+    
+}
+
+
+
+.num, .box__user__name {
+    font-weight: 900;
+    margin: 0;
+}
+
+.text {
+    font-size: 0.7rem;
+    margin: 0.5rem;
 }
 
